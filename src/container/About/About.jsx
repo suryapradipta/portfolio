@@ -10,7 +10,7 @@ import {collection, getDocs} from 'firebase/firestore';
 const About = () => {
     const [abouts, setAbouts] = useState([]);
 
-    useEffect(() => {
+    /*useEffect(() => {
         const getAbouts = async () => {
             try {
                 const querySnapshot = await getDocs(collection(db, "abouts"));
@@ -18,6 +18,22 @@ const About = () => {
                     ...doc.data(),
                     id: doc.id
                 })));
+            } catch (e) {
+                console.log(e);
+            }
+        };
+        getAbouts()
+    }, []);*/
+
+    useEffect(() => {
+        const getAbouts = async () => {
+            let list = [];
+            try {
+                const querySnapshot = await getDocs(collection(db, "abouts"));
+                querySnapshot.forEach((doc) => {
+                   list.push({id: doc.id, ...doc.data()});
+                });
+                setAbouts(list);
             } catch (e) {
                 console.log(e);
             }

@@ -1,14 +1,14 @@
-import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
+import {initializeApp} from "firebase/app";
+import {getFirestore} from "firebase/firestore";
 
 const firebaseConfig = {
     apiKey: process.env.REACT_APP_FIREBASE_KEY,
-    authDomain: "portfolio-df771.firebaseapp.com",
-    projectId: "portfolio-df771",
-    storageBucket: "portfolio-df771.appspot.com",
-    messagingSenderId: "412210543277",
-    appId: "1:412210543277:web:2db975608bb3ec3bfce424",
-    measurementId: "G-9LS5HYTVQD"
+    authDomain: "portfolio-ee383.firebaseapp.com",
+    projectId: "portfolio-ee383",
+    storageBucket: "portfolio-ee383.appspot.com",
+    messagingSenderId: "994485650217",
+    appId: "1:994485650217:web:79a9ecd29d31523235ad38",
+    measurementId: "G-Z3BCWJY9LH"
 };
 
 const app = initializeApp(firebaseConfig);
