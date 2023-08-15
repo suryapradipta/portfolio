@@ -1,7 +1,7 @@
 {
   "hosting": {
-    "site": "surya-pradipta",
-    "public": "public",
+    "site": "suryapradipta",
+    "public": "build",
     "ignore": [
       "firebase.json",
       "**/.*",
